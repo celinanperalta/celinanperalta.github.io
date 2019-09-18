@@ -1,0 +1,76 @@
+
+/*To do: make responsive*/
+
+html {
+	height: auto;
+	width: 100%;
+}
+
+body {
+	padding: 15vw 25vw;
+	font-family: 'Source Code Pro', monospace;
+	justify-content: center;
+}
+
+h2 {
+	color: #BFBDBD;
+}
+
+#f {
+	color: black;
+}
+
+.btn {
+	border-style: solid;
+	border-color: #000000;
+	border-width: 1px;
+	/*position: relative;*/
+	display: inline-block;
+	text-align: center;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	margin-top: 5vw;
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+}
+
+nav span {
+	display: table-cell;
+	text-decoration: none;
+	text-align: left;
+	width: auto;
+}
+
+a {
+	/*text-decoration: none;*/
+	color: #000000;
+}
+
+#btns a {
+	padding: 0.5em 1em 0.5em 1em;
+	font-size: 100%;
+	text-decoration: none;
+	/*color: #000000;*/
+	margin: 1em 1em 1em 0;
+}
+
+.btn:hover{
+	border-color: #BFBDBD;
+	color: #BFBDBD;
+	transition: border-color 0.25s, color 0.25s;
+}
+
+@media screen and (max-width: 800) {
+	html {
+	height: auto;
+	width: 100%;
+}
+	body {
+		padding: 1em 2em 0 2em;
+	}
+}
+
