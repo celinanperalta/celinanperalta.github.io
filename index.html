@@ -3,38 +3,233 @@
 <html>
 
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="css/main.css" rel="stylesheet">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 	<title>Celina Peralta</title>
 </head>
 
 <body>
-	
-	<div id="main">
-		<!-- <div class="propic"><img src="resources/hello.jpg" alt="Avatar"></div> -->
-		<div id="content">
-
-			<h1>Hi, I'm Celina. Nice to meet you!</h1>
-			<h2 id="title">I'm a <span id="f">student</span>, <span id="f"><a
-						href="https://github.com/celinanperalta">developer</a></span>, and sometimes a <span id="f"><a
-						href="">musician</a></span> at Stevens Institute of Technology in Hoboken,
-				NJ. I love finding new intersections between music and technology, creating with others, and racking up DD Perks Points. 
-			</h2>
-			<div id="btns">
-				<a href="mailto:celinanperalta@gmail.com" class="btn">Contact</a>
-				<a target="__blank" href="resources/PeraltaResume.pdf" class="btn">Resume</a>
-			</div>
-			<br>
-			<div id="links">
-				<p><a target="__blank" href="https://linkedin.com/in/celinanperalta">LinkedIn</a> | <a
-						target="__blank"
-						href="https://open.spotify.com/user/wheredidwego?si=CluUEEBrRCi64lx9JsB28g">Spotify</a> | <a
-						target="__blank" href="https://github.com/celinanperalta">Github</a></p>
+	<div class="container-fluid mx-auto p-5" id="profile-header">
+		<div class="row d-flex align-items-center justify-content-start">
+			<div class="col col-sm-auto d-flex align-items-center">
+				<div class="propic"><img class="responsive-img" src="resources/hello.jpg" alt="a rare picture of a smiling celina!"></div>
+				<div class="" id="profile-text">
+					<ul class="mx-5 list-unstyled">
+						<li>
+							<p class="text-uppercase fs-6 flow-text">Not a spotify profile... i think?</p>
+						</li>
+						<li>
+							<h1 class="display-1 fw-bolder flow-text" id="nameplate">Celina Peralta</h1>
+						</li>
+						<li>
+							<p class="flow-text">0 Hrs of Sleep &bull; &infin; &nbsp;Cups of&nbsp;☕&nbsp;Consumed</p>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
+	<div class="container-fluid mx-auto p-5">
+		<div class="row">
+			<div class="col col-sm-auto d-flex justify-content-left">
+				<a type="button" href="resources/Peralta_Celina_Resume.pdf" target="_blank"
+					class="btn btn-outline-light text-uppercase fs-6 fw-bold" data-bs-toggle="tooltip" data-bs-placement="right"
+					title="Don't unfollow me :( Click for my resume!">
+					Following
+				</a>
+			</div>
+		</div>
+		<div class="row mt-5">
+			<h3 class="fw-bold">Public <span class="text-decoration-line-through text-muted">Playlists</span>
+				...Information?</h3>
+		</div>
+		<div class="row row-cols-sm-2 row-cols-md-2 row-cols-xl-6 g-4 justify-content-start mb-5" id="public-playlists">
+			<div class="col-sm-6 col-md-4 col-xl-3">
+				<div class="card text-white bg-dark h-100">
+					<img src="resources/playlist-covers/hoboken.jpeg" class="card-img-top mx-auto d-block" alt="...">
+					<div class="card-body">
+						<h4 class="card-title">stuck at home</h4>
+							<p class="card-text text-muted">currently living in Hoboken, NJ. here for school, decent
+								pizza, and a nice view of NYC.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4  col-xl-3">
+				<div class="card text-white bg-dark h-100">
+					<img src="resources/playlist-covers/stevens.jpeg" class="card-img-top mx-auto d-block" alt="...">
+					<div class="card-body">
+						<h4 class="card-title">junior yr study playlist!</h4>
+							<p class="card-text text-muted">i study CS @ Stevens Institute of Technology. two more
+								years to go, hopefully!</p>
+					</div>
+				</div>
+			</div>
+			<div class=" col-sm-6 col-md-4  col-xl-3">
+				<div class="card text-white bg-dark h-100">
+					<img src="resources/playlist-covers/tableau.jpeg" class="card-img-top mx-auto d-block" alt="...">
+					<div class="card-body">
+						<h4 class="card-title">songs to code to</h4>
+							<p class="card-text text-muted">i am a SWE intern at Tableau! previously, i was a PM
+								intern at New York Life.</p>
+					</div>
+				</div>
+			</div>
+			<div class=" col-sm-6 col-md-4  col-xl-3">
+				<div class="card text-white bg-dark h-100">
+					<img src="resources/playlist-covers/filipino.jpg" class="card-img-top mx-auto d-block" alt="...">
+					<div class="card-body">
+						<h4 class="card-title">pilipino music</h4>
+							<p class="card-text text-muted">proud to be filipino, will dance to September in a
+								heartbeat. part of the Filipino Association of Stevens Tech.
+							</p>
+					</div>
+				</div>
+			</div>
+			<div class=" col-sm-6 col-md-4  col-xl-3">
+				<div class="card text-white bg-dark h-100">
+					<img src="resources/playlist-covers/verygay.jpg" class="card-img-top mx-auto d-block"
+						alt="pride month is every month">
+					<div class="card-body">
+						<h4 class="card-title">probably lesbian anthems</h4>
+							<p class="card-text text-muted">in 2020, i attended the O4U Tech conference and was a
+								mentee for Out in Tech U! i'm learning to bring my authentic self to the workplace.
+							</p>
+					</div>
+				</div>
+			</div>
+			<div class=" col-sm-6 col-md-4  col-xl-3">
+				<div class="card text-white bg-dark h-100">
+					<img src="resources/playlist-covers/guitar.jpg" class="card-img-top mx-auto d-block" alt="...">
+					<div class="card-body">
+						<h4 class="card-title">guitar bops</h4>
+							<p class="card-text text-muted">i've been playing the guitar for 7 years, pls jam with
+								me! listening to a lot of Grant Green, Julian Lage, and Joe Pass</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid mx-auto p-5 mt-5">
+		<div class="row">
+			<h3 class="fw-bold">Top <span class="text-decoration-line-through text-muted">Songs</span> Things I Work
+				With</h3>
+			<ul class="list-group-flush list-group">
+				<a class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
+					<span class="thumbnail ml-4"><img
+							src="https://img.icons8.com/color/48/000000/web-design.png" /></span>
+					<div class="ms-2 me-auto">
+						<h6 class="fw-bold">Web Development</h6>
+						<small class="text-muted">(feat. HTML, CSS, Javascript, Node, Express, SQL, and
+							MongoDB)</small>
+					</div>
+				</a>
+				<a class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
+					<span class="thumbnail ml-4"><img src="https://img.icons8.com/color/96/000000/console.png" /></span>
+					<div class="ms-2 me-auto">
+						<h6 class="fw-bold">Programming</h6>
+						<small class="text-muted">(feat. Python, Java, C++, C, and OCaml)</small>
+					</div>
+				</a>
+				<a class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
+					<span class="thumbnail ml-4"><img
+							src="https://img.icons8.com/color/48/000000/backend-development.png" /></span>
+					<div class="ms-2 me-auto">
+						<h6 class="fw-bold">Frameworks</h6>
+						<small class="text-muted">(feat. Typescript, React, and Vue (kinda))</small>
+					</div>
+				</a>
+				<a class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
+					<span class="thumbnail ml-4"><img
+							src="https://img.icons8.com/color/48/000000/pull-request.png" /></span>
+					<div class="ms-2 me-auto">
+						<h6 class="fw-bold">Tools</h6>
+						<small class="text-muted">(feat. Github, Gitlab, Postman, Slack, G Suite, and Excel)</small>
+					</div>
+				</a>
+			</ul>
+		</div>
+		<div class="row mt-5">
+			<h3 class="fw-bold">Top <span class="text-decoration-line-through text-muted">Artists</span> Ways to
+				Contact (or Stalk) Me</h3>
+			<ul class="list-group-flush list-group">
+				<a href="mailto:celinanperalta@gmail.com"
+					class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
+					<span class="thumbnail ml-4"><img
+							src="https://img.icons8.com/color/48/000000/gmail--v1.png" /></span>
+					<div class="ms-2 me-auto my-auto">
+						<h6 class="fw-bold">Email</h6>
+						<!-- <small class="text-muted">(feat. HTML, CSS, Javascript, Node, Express, and MongoDB)</small> -->
+					</div>
+				</a>
+				<a href="https://www.linkedin.com/in/celinanperalta" target="_blank"
+					class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
+					<span class="thumbnail ml-4"><img
+							src="https://img.icons8.com/color/48/000000/linkedin.png" /></span>
+					<div class="ms-2 me-auto my-auto">
+						<h6 class="fw-bold">LinkedIn</h6>
+						<!-- <small class="text-muted">(feat. Python, Java, C++, and OCaml)</small> -->
+					</div>
+				</a>
+				<a href="resources/Peralta_Celina.pdf" target="_blank"
+					class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
+					<span class="thumbnail ml-4"><img src="https://img.icons8.com/color/48/000000/resume.png" /></span>
+					<div class="ms-2 me-auto my-auto">
+						<h6 class="fw-bold">Resume</h6>
+						<!-- <small class="text-muted">(feat. HTML, CSS, Javascript, Node, Express, and MongoDB)</small> -->
+					</div>
+				</a>
+				<a href="https://github.com/celinanperalta" target="_blank"
+					class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
+					<span class="thumbnail ml-4"><img
+							src="https://img.icons8.com/color/48/000000/github-2.png" /></span>
+					<div class="ms-2 me-auto my-auto">
+						<h6 class="fw-bold">GitHub</h6>
+						<!-- <small class="text-muted">(feat. Typescript, React, and Vue (kinda))</small> -->
+					</div>
+				</a>
+				<a href="https://open.spotify.com/user/wheredidwego?si=361b0855f6794df0" target="_blank"
+					class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
+					<span class="thumbnail ml-4"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48"
+							height="48" viewBox="0 0 172 172" style=" fill:#000000;">
+							<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+								stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+								font-family="none" font-weight="none" font-size="none" text-anchor="none"
+								style="mix-blend-mode: normal">
+								<path d="M0,172v-172h172v172z" fill="none"></path>
+								<g>
+									<path
+										d="M86.00358,14.33333c-39.69258,0 -71.66667,31.97408 -71.66667,71.66667c0,39.69258 31.97408,71.66667 71.66667,71.66667c39.689,0 71.66667,-31.97408 71.66667,-71.66667c0,-39.69258 -31.97767,-71.66667 -71.66667,-71.66667z"
+										fill="#1db954"></path>
+									<path
+										d="M113.76008,121.52875c-1.04633,0 -2.09625,-0.51958 -3.14258,-1.04633c-9.95092,-5.75842 -21.99808,-8.901 -35.088,-8.901c-7.33508,0 -14.66658,1.04275 -21.47492,2.61583c-1.04633,0 -2.61942,0.52317 -3.14258,0.52317c-2.61942,0 -4.18892,-2.09983 -4.18892,-4.1925c0,-2.61583 1.5695,-4.1925 3.66575,-4.7085c8.37783,-2.09983 16.75925,-3.14258 25.66025,-3.14258c14.66658,0 28.28325,3.65858 39.80367,10.47767c1.5695,1.04275 2.61942,2.09267 2.61942,4.7085c-0.52317,2.09983 -2.61942,3.66575 -4.71208,3.66575zM121.09158,103.71958c-1.5695,0 -2.61583,-0.516 -3.66575,-1.04275c-10.99367,-6.80833 -26.187,-11.00442 -43.46583,-11.00442c-8.38142,0 -16.23608,1.04992 -21.99808,2.62658c-1.57308,0.516 -2.09625,0.516 -3.14258,0.516c-3.14258,0 -5.23883,-2.61583 -5.23883,-5.23525c0,-3.14258 1.57308,-4.71567 4.18892,-5.75842c7.85467,-2.09267 15.71292,-3.66575 26.71017,-3.66575c17.80917,0 35.09158,4.1925 48.70825,12.56675c2.09267,1.04275 3.14258,3.14258 3.14258,5.23525c0,3.14617 -2.09625,5.762 -5.23883,5.762zM129.473,82.77858c-1.5695,0 -2.09625,-0.52317 -3.66575,-1.04275c-12.57033,-7.33508 -31.42225,-11.52758 -49.75458,-11.52758c-9.42775,0 -18.8555,1.04992 -27.23333,3.14258c-1.04992,0 -2.09625,0.52317 -3.66575,0.52317c-3.66575,0.52317 -6.28517,-2.61583 -6.28517,-6.28517c0,-3.66575 2.09625,-5.75842 4.71208,-6.28517c9.95092,-3.14258 20.425,-4.1925 32.47217,-4.1925c19.90183,0 40.85,4.1925 56.56292,13.0935c2.09267,1.04992 3.66217,3.14258 3.66217,6.28517c-0.51958,3.66575 -3.14258,6.28875 -6.80475,6.28875z"
+										fill="#ffffff"></path>
+								</g>
+							</g>
+						</svg></span>
+					<div class="ms-2 me-auto my-auto">
+						<h6 class="fw-bold">Spotify</h6>
+						<small class="text-muted">(does this count as credit for the site)</small>
+					</div>
+				</a>
+			</ul>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+	</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+	</script>
 	<script src="js/main.js"></script>
 </body>
 
