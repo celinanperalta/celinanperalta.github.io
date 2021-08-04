@@ -86,11 +86,6 @@ ul .bg-dark {
 	box-shadow: 0 0 15px #191414 !important;
 }
 
-#public-playlists .card {
-	/* max-width: 300px; */
-	/* max-height: 450px; */
-	/* transition: color 1s ease-in-out; */
-}
 
 #public-playlists {
 	margin-top: -125px;
@@ -137,8 +132,8 @@ h4 {
 	/* height: 450px !important; */
 }
 
-#main-content {
-	margin-top: 200px;
+.main-content {
+	margin-top: -75px;
 }
 
 .responsive-img {
@@ -148,6 +143,11 @@ h4 {
 
 #nameplate {
 	font-weight: 800 !important;
+	letter-spacing: -0.03em;
+}
+
+#profile-text {
+	margin-left: 3em;
 }
 
 .card-details {
@@ -158,6 +158,9 @@ h4 {
 @media only screen and (max-width: 600px) {
 	.propic {
 		display: none;
+	}
+	#profile-text {
+		margin-left: 0;
 	}
 }
 
