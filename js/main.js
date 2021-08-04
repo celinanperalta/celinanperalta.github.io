@@ -4,5 +4,8 @@
     return new bootstrap.Tooltip(tooltipTriggerEl)
   });
 
+  $(".card").hover(function () {
+    $(".card-details").show();
+  });
 
 })(window.jQuery);

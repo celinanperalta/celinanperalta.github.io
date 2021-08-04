@@ -32,7 +32,7 @@ body {
 	font-size: 14pt !important;
 }
 
-.bg-dark:hover {
+.bg-dark {
 	background-color: #2f2f38 !important;
 }
 
@@ -149,3 +149,21 @@ h4 {
 #nameplate {
 	font-weight: 800 !important;
 }
+
+.card-details {
+	display:none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.propic {
+		display: none;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {
+	.propic {
+		display: none;
+	}
+} */
