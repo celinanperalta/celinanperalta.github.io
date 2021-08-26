@@ -20,11 +20,12 @@ body {
 }
 
 .card {
-	top: 30%;
+	/* top: 30%; */
 	box-shadow: 0 0 10px lightgrey;
 	border: 0px;
-	/* max-height: 750px; */
-	/* padding: 30px; */
+	height: 500px !important;
+	max-width: 250px;
+	margin: 0.5em;
 	transition: 0.2s linear;
 	padding: 15px !important;
 }
@@ -141,9 +142,12 @@ h4 {
 	height: auto !important;
 }
 
+#profile-name {
+	letter-spacing: 0.02em !important;
+}
 #nameplate {
 	font-weight: 800 !important;
-	letter-spacing: -0.03em;
+	letter-spacing: -0.05em;
 }
 
 #profile-text {
@@ -154,8 +158,13 @@ h4 {
 	display:none;
 }
 
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	.card {
+		max-width: 100%;
+		width: 100% !important;
+	}
 	.propic {
 		display: none;
 	}
@@ -164,9 +173,13 @@ h4 {
 	}
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up)
-@media only screen and (min-width: 600px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 800px) {
+	.card {
+		max-width: 100%;
+		width: 100% !important;
+	}
 	.propic {
 		display: none;
 	}
-} */
+}
