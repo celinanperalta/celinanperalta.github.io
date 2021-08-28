@@ -16,6 +16,105 @@
 </head>
 
 <body>
+	<div class="container">
+		<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content bg-dark">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modal1Label">stuck at home</h5>
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>currently living in Hoboken, NJ. here for school, decent
+							pizza, and a nice view of NYC. also a barista at bwè kafe, so come let me make ya coffee :)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Label"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content bg-dark">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modal2Label">junior yr study playlist!</h5>
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>i study CS @ Stevens Institute of Technology. two more years to go, hopefully!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Label"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content bg-dark">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modal3Label">songs to code to</h5>
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>i love product-first code and delivering immediate value to users. previously, i was a SWE intern at Tableau and a PM intern at New York Life.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Label"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content bg-dark">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modal4Label">pilipino music</h5>
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>proud to be filipino, will dance to September in a heartbeat. part of the Filipino Association of Stevens Tech.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5Label"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content bg-dark">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modal5Label">probably lesbian anthems</h5>
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>in 2020, i attended the O4U Tech conference and was a mentee for Out in Tech U! i'm learning to bring my authentic self to the workplace.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6Label"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content bg-dark">
+					<div class="modal-header">
+						<h5 class="modal-title" id="modal6Label">guitar bops</h5>
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<p>i've been playing the guitar for 7 years, pls jam with me! listening to a lot of Grant Green, Julian Lage, and Joe Pass</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="container-fluid mx-auto p-5" id="profile-header">
 		<div class="row d-flex align-items-center justify-content-start">
 			<div class="col col-sm-auto d-flex align-items-center">
@@ -52,83 +151,68 @@
 			<h3 class="fw-bold">Public <span class="text-decoration-line-through text-muted">Playlists</span>
 				...Information?</h3>
 		</div>
-		<div class="row row-cols-sm-2 row-cols-md-2 row-cols-xl-6 g-4 justify-content-start mb-5 mt-5"
+		<div class="row row-cols-xs-2 row-cols-sm-2 row-cols-md-2 row-cols-xl-6 g-4 justify-content-start mb-5 mt-5"
 			id="public-playlists">
-			<div class="col-sm-6 col-md-4 col-xl-2">
-				<div class="card text-white bg-dark h-100">
+			<div class="col-xs-6 col-sm-6 col-md-4 col-xl-2">
+				<div class="card text-white bg-dark h-100" data-bs-toggle="modal" data-bs-target="#modal1">
 					<img src="resources/playlist-covers/hoboken.jpeg" class="card-img-top mx-auto d-block" alt="...">
-					<div class="card-details"></div>
 					<div class="card-body">
+						<!-- <div class="card-action"><button class="kc_fab_main_btn">+</button></div> -->
 						<h4 class="card-title">stuck at home</h4>
-						<p class="card-text text-muted">currently living in Hoboken, NJ. here for school, decent
-							pizza, and a nice view of NYC. also a barista at bwè kafe, so come let me make ya coffee :)
-						</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-6 col-md-4  col-xl-2">
-				<div class="card text-white bg-dark h-100">
+			<div class="col-xs-6 col-sm-6 col-md-4 col-xl-2">
+				<div class="card text-white bg-dark h-100" data-bs-toggle="modal" data-bs-target="#modal2">
 					<img src="resources/playlist-covers/stevens.jpeg" class="card-img-top mx-auto d-block" alt="...">
 					<div class="card-body">
-						<h4 class="card-title">junior yr study playlist!</h4>
-						<p class="card-text text-muted">i study CS @ Stevens Institute of Technology. two more
-							years to go, hopefully!</p>
+						<h4 class="card-title">study playlist!</h4>
 					</div>
 				</div>
 			</div>
-			<div class=" col-sm-6 col-md-4  col-xl-2">
-				<div class="card text-white bg-dark h-100">
+			<div class="col-xs-6 col-sm-6 col-md-4 col-xl-2">
+				<div class="card text-white bg-dark h-100" data-bs-toggle="modal" data-bs-target="#modal3">
 					<img src="resources/playlist-covers/tableau.jpeg" class="card-img-top mx-auto d-block" alt="...">
 					<div class="card-body">
 						<h4 class="card-title">songs to code to</h4>
-						<p class="card-text text-muted">i am a SWE intern at Tableau! previously, i was a PM
-							intern at New York Life.</p>
 					</div>
 				</div>
 			</div>
-			<div class=" col-sm-6 col-md-4  col-xl-2">
-				<div class="card text-white bg-dark h-100">
+			<div class="col-xs-6 col-sm-6 col-md-4 col-xl-2">
+				<div class="card text-white bg-dark h-100" data-bs-toggle="modal" data-bs-target="#modal4">
 					<img src="resources/playlist-covers/filipino.jpg" class="card-img-top mx-auto d-block" alt="...">
 					<div class="card-body">
 						<h4 class="card-title">pilipino music</h4>
-						<p class="card-text text-muted">proud to be filipino, will dance to September in a
-							heartbeat. part of the Filipino Association of Stevens Tech.
-						</p>
 					</div>
 				</div>
 			</div>
-			<div class=" col-sm-6 col-md-4  col-xl-2">
-				<div class="card text-white bg-dark h-100">
+			<div class="col-xs-6 col-sm-6 col-md-4 col-xl-2">
+				<div class="card text-white bg-dark h-100" data-bs-toggle="modal" data-bs-target="#modal5">
 					<img src="resources/playlist-covers/verygay.jpg" class="card-img-top mx-auto d-block"
 						alt="pride month is every month">
 					<div class="card-body">
-						<h4 class="card-title">probably lesbian anthems</h4>
-						<p class="card-text text-muted">in 2020, i attended the O4U Tech conference and was a
-							mentee for Out in Tech U! i'm learning to bring my authentic self to the workplace.
-						</p>
+						<h4 class="card-title">lesbian anthems</h4>
 					</div>
 				</div>
 			</div>
-			<div class=" col-sm-6 col-md-4  col-xl-2">
-				<div class="card text-white bg-dark h-100">
+			<div class="col-xs-6 col-sm-6 col-md-4 col-xl-2">
+				<div class="card text-white bg-dark h-100" data-bs-toggle="modal" data-bs-target="#modal6">
 					<img src="resources/playlist-covers/guitar.jpg" class="card-img-top mx-auto d-block" alt="...">
 					<div class="card-body">
 						<h4 class="card-title">guitar bops</h4>
-						<p class="card-text text-muted">i've been playing the guitar for 7 years, pls jam with
-							me! listening to a lot of Grant Green, Julian Lage, and Joe Pass</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid mx-auto p-5 mt-5">
+	<div class="container-fluid mx-auto px-5">
 		<div class="row">
 			<h3 class="fw-bold">Top <span class="text-decoration-line-through text-muted">Songs</span> Things I Work
 				With</h3>
 			<ul class="list-group-flush list-group">
 				<a class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
 					<span class="thumbnail ml-4"><img
-							src="https://img.icons8.com/color/48/000000/web-design.png" /></span>
+							src="https://img.icons8.com/color/96/000000/web-design.png" /></span>
 					<div class="ms-2 me-auto">
 						<h6 class="fw-bold">Web Development</h6>
 						<small class="text-muted">(feat. HTML, CSS, Javascript, Node, Express, SQL, and
@@ -136,7 +220,7 @@
 					</div>
 				</a>
 				<a class="list-group-item d-flex justify-content-between align-items-start bg-dark text-light">
-					<span class="thumbnail ml-4"><img src="https://img.icons8.com/color/96/000000/console.png" /></span>
+					<span class="thumbnail ml-4"><img src="https://img.icons8.com/color/48/000000/console.png" /></span>
 					<div class="ms-2 me-auto">
 						<h6 class="fw-bold">Programming</h6>
 						<small class="text-muted">(feat. Python, Java, C++, C, and OCaml)</small>
@@ -226,14 +310,14 @@
 			</ul>
 		</div>
 	</div>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
-	</script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
 	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script src="js/main.js"></script>

@@ -4,6 +4,7 @@
 	--main-bg-color: #424B54;
 	--primary-text: #FFFFFF;
 	--secondary-text: #FFFFFF;
+	--bg-color-light: #383843;
 }
 
 html {
@@ -23,18 +24,30 @@ body {
 	/* top: 30%; */
 	box-shadow: 0 0 10px lightgrey;
 	border: 0px;
-	height: 500px !important;
+	/* max-height: 325px !important; */
+	height: fit-content;
 	max-width: 250px;
 	margin: 0.5em;
 	transition: 0.2s linear;
 	padding: 15px !important;
 }
 .card h4 {
-	font-size: 14pt !important;
+	font-size: 12pt !important;
+	white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
+
+.card-body {
+	padding-left: 0 !important;
 }
 
 .bg-dark {
 	background-color: #2f2f38 !important;
+}
+
+#public-playlists .bg-dark:hover {
+	background-color: #383843 !important;
 }
 
 .bg-dark .text-muted {
@@ -90,13 +103,18 @@ ul .bg-dark {
 
 #public-playlists {
 	margin-top: -125px;
+	max-width: fit-content;
+}
+
+.card-img-top {
+	border-radius: 0 !important;
+	box-shadow: 0 0 30px #000000;
 }
 
 .thumbnail {
 	max-width: 50px;
 	max-height: 50px;
 	overflow: hidden;
-	box-shadow: 0 0 20px #191414;
 }
 
 .thumbnail>img {
@@ -158,6 +176,33 @@ h4 {
 	display:none;
 }
 
+.kc_fab_main_btn {
+	top: 51%;
+	right: 5%;
+	margin: 10px;
+	position: absolute;
+	z-index: 50;
+	background-color: #1db954;
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	background: #1db954;
+	border: none;
+	outline: none;
+	color: #FFF;
+	font-size: 36px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	transition: .3s;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .kc_fab_main_btn:focus {
+	transform: scale(1.1);
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+  }
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -177,7 +222,6 @@ h4 {
 @media only screen and (max-width: 800px) {
 	.card {
 		max-width: 100%;
-		width: 100% !important;
 	}
 	.propic {
 		display: none;
