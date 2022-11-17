@@ -10,220 +10,59 @@
 html {
 	height: 100%;
 	width: auto;
-	margin: auto;
 }
 
 body {
-	background-color: #191414;
-	/* background-image: linear-gradient(grey, #191414); */
-	color: #FFFFFF;
-	font-family: 'Manrope', sans-serif;
-}
-
-.card {
-	/* top: 30%; */
-	box-shadow: 0 0 10px lightgrey;
-	border: 0px;
-	/* max-height: 325px !important; */
-	height: fit-content;
-	max-width: 250px;
-	margin: 0.5em;
-	transition: 0.2s linear;
-	padding: 15px !important;
-}
-.card h4 {
-	font-size: 12pt !important;
-	white-space: nowrap;
-  	overflow: hidden;
-  	text-overflow: ellipsis;
-}
-
-.card-body {
-	padding-left: 0 !important;
-}
-
-.bg-dark {
-	background-color: #2f2f38 !important;
-}
-
-#public-playlists .bg-dark:hover {
-	background-color: #383843 !important;
-}
-
-.bg-dark .text-muted {
-	transition: 0.1s linear;
-}
-
-.bg-dark:hover .text-muted {
-	color: #FFFFFF !important;
-}
-
-.propic {
-	filter: drop-shadow(0 0 20px #191414);
-	/* max-height: 350px; */
-}
-
-.propic img {
-	clip-path: circle();
-	max-height: 350px;
-}
-
-.spacer {
-	height: 50px;
-}
-
-#profile-header {
-	padding-top: 0px;
-	height: auto;
-	background-image: linear-gradient(to bottom, #6ea8ff, #191414);
-}
-
-#following-btn {
-	width: auto;
-}
-
-.bg-dark {
-	border: none !important;
-	box-shadow: none !important;
-	background-color: #201C20 !important;
-	transition: 0.1s linear;
-}
-
-ul .bg-dark {
-	background-color: #191414 !important;
-}
-
-.card>img {
-	width: 100%;
-	max-height: 300px;
-	object-fit: cover;
-	box-shadow: 0 0 15px #191414 !important;
-}
-
-
-#public-playlists {
-	margin-top: -125px;
-	max-width: fit-content;
-}
-
-.card-img-top {
-	border-radius: 0 !important;
-	box-shadow: 0 0 30px #000000;
-}
-
-.thumbnail {
-	max-width: 50px;
-	max-height: 50px;
-	overflow: hidden;
-}
-
-.thumbnail>img {
-	width: 100%;
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: 'Questrial', sans-serif;
 	height: 100%;
-	object-fit: cover;
-	object-position: top;
+	text-align: center;
 }
 
-.list-group-item {
-	margin-bottom: 10px;
+p {
+	font-family: 'IBM Plex Mono', monospace;
 }
 
-ol li::before {
-	content: counter(number) " " !important;
-	counter-increment: number !important;
-	counter-reset: number !important;
+.container {
+	height: 100%;
+	margin: auto;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
 }
 
-h1,
-h3 {
-	font-weight: 800 !important;
+.child-container {
+	height: auto;
+	width: 100%;
 }
 
-h4 {
-	font-weight: 800 !important;
+ul {
+	display: block;
 }
 
-#profile-header .row {
-	width: 100% !important;
-	margin: 0 !important;
-	padding: 0 !important;
-	display: flex !important;
-	/* height: 450px !important; */
+li {
+	display: inline-block;
+	border: none !important;
 }
 
-.main-content {
-	margin-top: -75px;
-}
 
-.responsive-img {
-	max-width: 100% !important;
-	height: auto !important;
-}
-
-#profile-name {
-	letter-spacing: 0.02em !important;
-}
-#nameplate {
-	font-weight: 800 !important;
-	letter-spacing: -0.05em;
-}
-
-#profile-text {
-	margin-left: 3em;
-}
-
-.card-details {
-	display:none;
-}
-
-.kc_fab_main_btn {
-	top: 51%;
-	right: 5%;
-	margin: 10px;
-	position: absolute;
-	z-index: 50;
-	background-color: #1db954;
-	width: 45px;
-	height: 45px;
-	border-radius: 100%;
-	background: #1db954;
-	border: none;
-	outline: none;
-	color: #FFF;
-	font-size: 36px;
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-	transition: .3s;
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-  
-  .kc_fab_main_btn:focus {
-	transform: scale(1.1);
-	transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-  }
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-	.card {
-		max-width: 100%;
-		width: 100% !important;
-	}
-	.propic {
-		display: none;
-	}
-	#profile-text {
-		margin-left: 0;
-	}
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 800px) {
-	.card {
-		max-width: 100%;
-	}
-	.propic {
-		display: none;
-	}
-}
+/*  fontSize: */
+.xs   {font-size: 0.75rem}
+.sm   {font-size: 0.875rem}
+.base {font-size: 1rem}
+.lg   {font-size: 1.125rem}
+.xl   {font-size: 1.25rem}
+.xl2  {font-size: 1.5rem}
+.xl3  {font-size: 1.875rem}
+.xl4  {font-size: 2.25rem}
+.xl5  {font-size: 3rem}
+.xl6  {font-size: 4rem}
+.fs1  {font-size: 1vw}
+.fs2  {font-size: 1.4vw}
+.fs3  {font-size: 1.6vw}
+.fs4  {font-size: 1.8vw}
+.fs5  {font-size: 2vw}
+.fs6  {font-size: 2.2vw}
+.fs7  {font-size: 2.4vw}
+.fs8  {font-size: 2.6vw}
