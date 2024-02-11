@@ -1,68 +1,110 @@
 /*To do: make responsive*/
 
 :root {
-	--main-bg-color: #424B54;
-	--primary-text: #FFFFFF;
-	--secondary-text: #FFFFFF;
-	--bg-color-light: #383843;
+  --main-bg-color: #424b54;
+  --primary-text: #ffffff;
+  --secondary-text: #ffffff;
+  --bg-color-light: #383843;
 }
 
 html {
-	height: 100%;
-	width: auto;
+  height: 100%;
+  width: auto;
 }
 
 body {
-	background-color: #FFFFFF;
-	color: #000000;
-	font-family: 'Questrial', sans-serif;
-	height: 100%;
-	text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+  height: 100%;
+  font-family: "Chivo", sans-serif;
+  text-align: left;
 }
 
 p {
-	font-family: 'IBM Plex Mono', monospace;
+  font-family: "Krub", sans-serif;
+  font-size: 1rem;
+}
+
+.content {
+  padding: 0.5rem 1rem;
 }
 
 .container {
-	height: 100%;
-	margin: auto;
-	display: flex;
-  	align-items: center;
-  	justify-content: center;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 .child-container {
-	height: auto;
-	width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 ul {
-	display: block;
+  display: block;
+  margin-left: none;
+  padding-left: none;
 }
 
 li {
-	display: inline-block;
-	border: none !important;
+  display: inline-block;
+  border: none !important;
 }
 
-
 /*  fontSize: */
-.xs   {font-size: 0.75rem}
-.sm   {font-size: 0.875rem}
-.base {font-size: 1rem}
-.lg   {font-size: 1.125rem}
-.xl   {font-size: 1.25rem}
-.xl2  {font-size: 1.5rem}
-.xl3  {font-size: 1.875rem}
-.xl4  {font-size: 2.25rem}
-.xl5  {font-size: 3rem}
-.xl6  {font-size: 4rem}
-.fs1  {font-size: 1vw}
-.fs2  {font-size: 1.4vw}
-.fs3  {font-size: 1.6vw}
-.fs4  {font-size: 1.8vw}
-.fs5  {font-size: 2vw}
-.fs6  {font-size: 2.2vw}
-.fs7  {font-size: 2.4vw}
-.fs8  {font-size: 2.6vw}
+.xs {
+  font-size: 0.75rem;
+}
+.sm {
+  font-size: 0.875rem;
+}
+.base {
+  font-size: 1rem;
+}
+.lg {
+  font-size: 1.125rem;
+}
+.xl {
+  font-size: 1.25rem;
+}
+.xl2 {
+  font-size: 1.5rem;
+}
+.xl3 {
+  font-size: 1.875rem;
+}
+.xl4 {
+  font-size: 2.25rem;
+}
+.xl5 {
+  font-size: 3rem;
+}
+.xl6 {
+  font-size: 4rem;
+}
+.fs1 {
+  font-size: 1vw;
+}
+.fs2 {
+  font-size: 1.4vw;
+}
+.fs3 {
+  font-size: 1.6vw;
+}
+.fs4 {
+  font-size: 1.8vw;
+}
+.fs5 {
+  font-size: 2vw;
+}
+.fs6 {
+  font-size: 2.2vw;
+}
+.fs7 {
+  font-size: 2.4vw;
+}
+.fs8 {
+  font-size: 2.6vw;
+}
